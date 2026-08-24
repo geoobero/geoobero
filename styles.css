@@ -105,16 +105,17 @@
             flex: 0 0 auto;
         }
 
-        #fullscreen-overlay {
+        .gallery-overlay {
+            display: none;
             transition: opacity 0.3s ease;
         }
 
-        #fullscreen-image {
-            transition: transform 0.3s ease;
+        .gallery-overlay.open {
+            display: flex;
         }
 
-        #fullscreen-overlay:not(.hidden) {
-            display: flex !important;
+        .gallery-fullscreen {
+            transition: transform 0.3s ease;
         }
 
         .fade-in-up {

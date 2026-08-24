@@ -366,218 +366,7 @@
                         <hr class="w-30 mt-5 ml-2 text-gray-300">
                     </span></h2>
             </div>
-            <div class="">
-                <div class="flex flex-col items-center justify-center mt-15">
-                    <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">
-                        E-commerce website
-                    </h1>
-                    <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="project-copy w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
-                            <h1
-                                class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">
-                                StyleShop is a modern front-end e-commerce web app built with Next.js, React, and
-                                Tailwind CSS, with AI integration to enhance the user experience. I created a responsive
-                                storefront with reusable UI components, product display sections, and cart interactions
-                                for smooth browsing across devices. The project focused on building an attractive,
-                                user-friendly interface with strong visual design, interactive features, and modern
-                                AI-powered functionality.
-                            </h1>
-                            <a class="project-link" href="https://styleshop-zeta.vercel.app/" target="_blank"
-                                rel="noopener noreferrer">
-                                View live project
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                        <div class="project-card max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
-                            style="transition-delay: 100ms;">
-                            <!-- Card Header -->
-                            <div class="p-4 bg-gray-800 border-b">
-                                <h2 class="text-xl font-semibold text-gray-200">Photo Gallery</h2>
-                                <p class="text-sm text-gray-400">Click to view images</p>
-                            </div>
-
-                            <!-- Image Display Area -->
-                            <div class="relative h-64 bg-black">
-                                <!-- Current Image -->
-                                <img id="current-image" src="" alt="Gallery image 1"
-                                    class="w-full h-full object-cover cursor-zoom-in transition-opacity duration-300">
-
-                                <!-- Navigation Controls -->
-                                <button id="prev-btn"
-                                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 19l-7-7 7-7" />
-                                    </svg>
-                                </button>
-                                <button id="next-btn"
-                                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </button>
-
-                                <!-- Image Counter -->
-                                <div
-                                    class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                                    <span id="image-counter">1/5</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Fullscreen Overlay -->
-                        <div id="fullscreen-overlay"
-                            class="fixed inset-0 bg-black z-50 hidden items-center justify-center">
-                            <div class="relative w-full h-full flex items-center justify-center">
-                                <img id="fullscreen-image" src="" alt=""
-                                    class="max-w-full max-h-full object-contain cursor-zoom-out">
-
-                                <!-- Navigation Controls -->
-                                <button id="fs-prev-btn"
-                                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 19l-7-7 7-7" />
-                                    </svg>
-                                </button>
-                                <button id="fs-next-btn"
-                                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </button>
-
-                                <!-- Close Button -->
-                                <button id="close-fs-btn"
-                                    class="absolute top-4 right-4 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                                <!-- Image Counter -->
-                                <div
-                                    class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-lg">
-                                    <span id="fs-image-counter">1/5</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2nd project -->
-                <div class="flex flex-col items-center justify-center mt-40">
-                    <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">
-                        EduHub
-                    </h1>
-                    <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="project-card max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up"
-                            style="transition-delay: 100ms;">
-                            <!-- Card Header -->
-                            <div class="p-4 bg-gray-800 border-b">
-                                <h2 class="text-xl font-semibold text-gray-200">Photo Gallery</h2>
-                                <p class="text-sm text-gray-400">Click to view images</p>
-                            </div>
-
-                            <!-- Image Display Area -->
-                            <div class="relative h-64 bg-black">
-                                <!-- Current Image -->
-                                <img id="current-images" src="" alt="Gallery images2 1"
-                                    class="w-full h-full object-cover cursor-zoom-in transition-opacity duration-300">
-
-                                <!-- Navigation Controls -->
-                                <button id="prev-btns"
-                                    class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 19l-7-7 7-7" />
-                                    </svg>
-                                </button>
-                                <button id="next-btns"
-                                    class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </button>
-
-                                <!-- Image Counter -->
-                                <div
-                                    class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                                    <span id="image-counters">1/5</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-copy w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
-                            <h1
-                                class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">
-                                A SIMPLE student management system built with CRUD functionality and AI integration to
-                                showcase modern web development techniques. It is built with Next.js, Tailwindcss,
-                                Node.js, Supabase and Vercel for deployment It includes "signup" and a secure
-                                authentication and role-based access for both users and administrators.
-                            </h1>
-                            <a class="project-link" href="https://student-management-one-mu.vercel.app/login"
-                                target="_blank" rel="noopener noreferrer">
-                                View live project
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-
-                        <!-- Fullscreen Overlay -->
-                        <div id="fullscreen-overlays"
-                            class="fixed inset-0 bg-black z-50 hidden items-center justify-center">
-                            <div class="relative w-full h-full flex items-center justify-center">
-                                <img id="fullscreen-images" src="" alt=""
-                                    class="max-w-full max-h-full object-contain cursor-zoom-out">
-
-                                <!-- Navigation Controls -->
-                                <button id="fs-prev-btns"
-                                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 19l-7-7 7-7" />
-                                    </svg>
-                                </button>
-                                <button id="fs-next-btns"
-                                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 5l7 7-7 7" />
-                                    </svg>
-                                </button>
-
-                                <!-- Close Button -->
-                                <button id="close-fs-btns"
-                                    class="absolute top-4 right-4 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M6 18L18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-
-                                <!-- Image Counter -->
-                                <div
-                                    class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-lg">
-                                    <span id="fs-image-counters">1/5</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="projects-list"></div>
         </section>
     </main>
 
@@ -729,208 +518,165 @@
             }
         });
 
-        // Image gallery logic
-        document.addEventListener('DOMContentLoaded', function () {
-            const images = [
-                "images/styleshop1.PNG",
-                "images/styleshop-products.PNG",
-                "images/styleshop-contact.PNG",
+        // ── PROJECTS DATA ─────────────────────────────────────────────
+        // Add a new project by appending an object to this array, then
+        // drop its screenshot files into /images. That's all that's needed.
+        const projects = [
+            {
+                title: "E-commerce website",
+                description: "StyleShop is a modern front-end e-commerce web app built with Next.js, React, and Tailwind CSS, with AI integration to enhance the user experience. I created a responsive storefront with reusable UI components, product display sections, and cart interactions for smooth browsing across devices. The project focused on building an attractive, user-friendly interface with strong visual design, interactive features, and modern AI-powered functionality.",
+                link: "https://styleshop-zeta.vercel.app/",
+                images: [
+                    "images/styleshop1.PNG",
+                    "images/styleshop-products.PNG",
+                    "images/styleshop-contact.PNG"
+                ]
+            },
+            {
+                title: "EduHub",
+                description: "A simple student management system built with CRUD functionality and AI integration to showcase modern web development techniques. It is built with Next.js, Tailwindcss, Node.js, Supabase and Vercel for deployment. It includes \"signup\" and a secure authentication and role-based access for both users and administrators.",
+                link: "https://student-management-one-mu.vercel.app/login",
+                images: [
+                    "images/EduHub.PNG",
+                    "images/Eduhub-helpCenter.PNG",
+                    "images/Eduhub-chatbot.PNG"
+                ]
+            }
+            // ── ADD NEW PROJECTS HERE ──
+            // { title: "RideEase", description: "...", link: "https://...", images: ["images/ride-ease1.PNG", "images/ride-ease2.PNG", "images/ride-ease3.PNG"] },
+            // { title: "New Project", description: "...", link: "https://...", images: ["images/1.PNG", "images/2.PNG", "images/3.PNG"] }
+        ];
 
-            ];
+        // Small SVG helpers for the gallery controls
+        function chevronLeft(size) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" class="h-' + size + ' w-' + size + '" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>';
+        }
+        function chevronRight(size) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" class="h-' + size + ' w-' + size + '" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>';
+        }
+        function closeIcon(size) {
+            return '<svg xmlns="http://www.w3.org/2000/svg" class="h-' + size + ' w-' + size + '" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+        }
 
-            // Card elements
-            const currentImage = document.getElementById('current-image');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-            const imageCounter = document.getElementById('image-counter');
-            const thumbnails = document.querySelectorAll('.thumbnail');
+        // Render all projects into #projects-list
+        function renderProjects() {
+            const list = document.getElementById('projects-list');
+            if (!list) return;
 
-            // Fullscreen elements
-            const fullscreenOverlay = document.getElementById('fullscreen-overlay');
-            const fullscreenImage = document.getElementById('fullscreen-image');
-            const fsPrevBtn = document.getElementById('fs-prev-btn');
-            const fsNextBtn = document.getElementById('fs-next-btn');
-            const closeFsBtn = document.getElementById('close-fs-btn');
-            const fsImageCounter = document.getElementById('fs-image-counter');
+            list.innerHTML = projects.map((project, index) => {
+                const reversed = index % 2 === 1 ? ' md:flex-row-reverse' : '';
+                const topGap = index === 0 ? '' : ' mt-40';
+                const count = project.images.length;
 
-            let currentIndex = 0;
-            let isFullscreen = false;
+                return `
+                    <div class="project flex flex-col items-center justify-center${topGap}" data-index="${index}">
+                        <h1 class="text-white text-3xl md:text-2xl lg:text-3xl font-bold text-center">${project.title}</h1>
+                        <div class="mt-15 flex flex-col md:flex-row items-center justify-center gap-8${reversed}">
+                            <div class="project-copy w-full md:w-1/2 flex justify-center mb-2 md:mb-0 fade-in-up">
+                                <p class="text-gray-200 max-w-4xl text-base sm:text-lg md:text-lg lg:text-2xl text-center md:text-left px-2">${project.description}</p>
+                                <a class="project-link" href="${project.link}" target="_blank" rel="noopener noreferrer">
+                                    View live project
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <div class="project-card max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-1 border-green-400 fade-in-up" style="transition-delay:100ms;">
+                                <div class="p-4 bg-gray-800 border-b">
+                                    <h2 class="text-xl font-semibold text-gray-200">Project Screenshots</h2>
+                                    <p class="text-sm text-gray-400">Click to view images</p>
+                                </div>
+                                <div class="relative h-64 bg-black">
+                                    <img class="gallery-image w-full h-full object-cover cursor-zoom-in transition-opacity duration-300" src="${project.images[0]}" alt="${project.title} screenshot 1">
+                                    <button class="gallery-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">${chevronLeft(6)}</button>
+                                    <button class="gallery-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">${chevronRight(6)}</button>
+                                    <div class="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                                        <span class="gallery-counter">1/${count}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-overlay fixed inset-0 bg-black z-50 items-center justify-center">
+                            <div class="relative w-full h-full flex items-center justify-center">
+                                <img class="gallery-fullscreen max-w-full max-h-full object-contain cursor-zoom-out" src="" alt="">
+                                <button class="gallery-fs-prev absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">${chevronLeft(8)}</button>
+                                <button class="gallery-fs-next absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">${chevronRight(8)}</button>
+                                <button class="gallery-fs-close absolute top-4 right-4 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition">${closeIcon(6)}</button>
+                                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-full text-lg">
+                                    <span class="gallery-fs-counter">1/${count}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
 
-            // Update displayed image
-            function updateImage(index) {
-                currentIndex = index;
-                currentImage.src = images[index];
-                currentImage.alt = `Gallery image ${index + 1}`;
-                imageCounter.textContent = `${index + 1}/${images.length}`;
-                fsImageCounter.textContent = `${index + 1}/${images.length}`;
+        // Wire up one project's gallery (prev/next + fullscreen). One shared code path.
+        let activeGallery = null;
 
-                if (isFullscreen) {
-                    fullscreenImage.src = images[index];
-                    fullscreenImage.alt = `Gallery image ${index + 1}`;
-                }
+        function initGallery(projectEl, images) {
+            const image = projectEl.querySelector('.gallery-image');
+            const fullscreenImg = projectEl.querySelector('.gallery-fullscreen');
+            const overlay = projectEl.querySelector('.gallery-overlay');
+            const counter = projectEl.querySelector('.gallery-counter');
+            const fsCounter = projectEl.querySelector('.gallery-fs-counter');
+            const prevBtn = projectEl.querySelector('.gallery-prev');
+            const nextBtn = projectEl.querySelector('.gallery-next');
+            const fsPrev = projectEl.querySelector('.gallery-fs-prev');
+            const fsNext = projectEl.querySelector('.gallery-fs-next');
+            const fsClose = projectEl.querySelector('.gallery-fs-close');
 
-                // Update active thumbnail
-                thumbnails.forEach((thumb, i) => {
-                    thumb.classList.toggle('border-blue-500', i === index);
-                    thumb.classList.toggle('border-transparent', i !== index);
-                });
+            let index = 0;
+
+            function show(i) {
+                index = (i + images.length) % images.length;
+                image.src = images[index];
+                image.alt = `${projectEl.dataset.index} - screenshot ${index + 1}`;
+                fullscreenImg.src = images[index];
+                counter.textContent = `${index + 1}/${images.length}`;
+                fsCounter.textContent = `${index + 1}/${images.length}`;
             }
 
-            // Next image
-            function nextImage() {
-                const newIndex = (currentIndex + 1) % images.length;
-                updateImage(newIndex);
-            }
-
-            // Previous image
-            function prevImage() {
-                const newIndex = (currentIndex - 1 + images.length) % images.length;
-                updateImage(newIndex);
-            }
-
-            // Open fullscreen
-            function openFullscreen() {
-                isFullscreen = true;
-                fullscreenImage.src = images[currentIndex];
-                fullscreenImage.alt = `Gallery image ${currentIndex + 1}`;
-                fullscreenOverlay.classList.remove('hidden');
-                fullscreenOverlay.classList.add('flex');
+            function open() {
+                show(index);
+                overlay.classList.add('open');
                 document.body.style.overflow = 'hidden';
+                activeGallery = { next: () => show(index + 1), prev: () => show(index - 1), close };
             }
 
-            // Close fullscreen
-            function closeFullscreen() {
-                isFullscreen = false;
-                fullscreenOverlay.classList.add('hidden');
-                fullscreenOverlay.classList.remove('flex');
+            function close() {
+                overlay.classList.remove('open');
                 document.body.style.overflow = '';
+                activeGallery = null;
             }
 
-            // Event listeners for card
-            currentImage.addEventListener('click', openFullscreen);
-            nextBtn.addEventListener('click', nextImage);
-            prevBtn.addEventListener('click', prevImage);
+            image.addEventListener('click', open);
+            prevBtn.addEventListener('click', () => show(index - 1));
+            nextBtn.addEventListener('click', () => show(index + 1));
+            fullscreenImg.addEventListener('click', close);
+            fsPrev.addEventListener('click', () => show(index - 1));
+            fsNext.addEventListener('click', () => show(index + 1));
+            fsClose.addEventListener('click', close);
 
-            // Event listeners for fullscreen
-            fullscreenImage.addEventListener('click', closeFullscreen);
-            fsNextBtn.addEventListener('click', nextImage);
-            fsPrevBtn.addEventListener('click', prevImage);
-            closeFsBtn.addEventListener('click', closeFullscreen);
+            show(0);
+        }
 
-            // Keyboard navigation
-            document.addEventListener('keydown', function (e) {
-                if (!isFullscreen) return;
-
-                if (e.key === 'ArrowRight') nextImage();
-                if (e.key === 'ArrowLeft') prevImage();
-                if (e.key === 'Escape') closeFullscreen();
-            });
-
-            // Initialize
-            updateImage(0);
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            const images2 = [
-                "images/EduHub.PNG",
-                "images/Eduhub-helpCenter.PNG",
-                "images/Eduhub-chatbot.PNG",
-
-            ];
-
-            // Card elements
-            const currentImages = document.getElementById('current-images');
-            const prevBtns = document.getElementById('prev-btns');
-            const nextBtns = document.getElementById('next-btns');
-            const imageCounters = document.getElementById('image-counters');
-            const thumbnailss = document.querySelectorAll('.thumbnails');
-
-            // Fullscreen elements
-            const fullscreenOverlays = document.getElementById('fullscreen-overlays');
-            const fullscreenImages = document.getElementById('fullscreen-images');
-            const fsPrevBtns = document.getElementById('fs-prev-btns');
-            const fsNextBtns = document.getElementById('fs-next-btns');
-            const closeFsBtns = document.getElementById('close-fs-btns');
-            const fsImageCounters = document.getElementById('fs-image-counters');
-
-            let currentIndex2 = 0;
-            let isFullscreen2 = false;
-
-            // Update displayed image
-            function updateImages(index) {
-                currentIndex2 = index;
-                currentImages.src = images2[index];
-                currentImages.alt = `Gallery images ${index + 1}`;
-                imageCounters.textContent = `${index + 1}/${images2.length}`;
-                fsImageCounters.textContent = `${index + 1}/${images2.length}`;
-
-                if (isFullscreen2) {
-                    fullscreenImages.src = images2[index];
-                    fullscreenImages.alt = `Gallery images ${index + 1}`;
-                }
-
-                // Update active thumbnail
-                thumbnailss.forEach((thumbs, i) => {
-                    thumbs.classList.toggle('border-blue-500', i === index);
-                    thumbs.classList.toggle('border-transparent', i !== index);
-                });
-            }
-
-            // Next image
-            function nextImages() {
-                const newIndex2 = (currentIndex2 + 1) % images2.length;
-                updateImages(newIndex2);
-            }
-
-            // Previous image
-            function prevImages() {
-                const newIndex2 = (currentIndex2 - 1 + images2.length) % images2.length;
-                updateImages(newIndex2);
-            }
-
-            // Open fullscreen
-            function openFullscreens() {
-                isFullscreen2 = true;
-                fullscreenImages.src = images2[currentIndex2];
-                fullscreenImages.alt = `Gallery images ${currentIndex2 + 1}`;
-                fullscreenOverlays.classList.remove('hidden');
-                fullscreenOverlays.classList.add('flex');
-                document.body.style.overflow = 'hidden';
-            }
-
-            // Close fullscreen
-            function closeFullscreens() {
-                isFullscreen2 = false;
-                fullscreenOverlays.classList.add('hidden');
-                fullscreenOverlays.classList.remove('flex');
-                document.body.style.overflow = '';
-            }
-
-            // Event listeners for card
-            currentImages.addEventListener('click', openFullscreens);
-            nextBtns.addEventListener('click', nextImages);
-            prevBtns.addEventListener('click', prevImages);
-
-            // Event listeners for fullscreen
-            fullscreenImages.addEventListener('click', closeFullscreens);
-            fsNextBtns.addEventListener('click', nextImages);
-            fsPrevBtns.addEventListener('click', prevImages);
-            closeFsBtns.addEventListener('click', closeFullscreens);
-
-            // Keyboard navigation
-            document.addEventListener('keydown', function (e) {
-                if (!isFullscreen2) return;
-
-                if (e.key === 'ArrowRight') nextImages();
-                if (e.key === 'ArrowLeft') prevImages();
-                if (e.key === 'Escape') closeFullscreens();
-            });
-
-            // Initialize
-            updateImages(0);
+        // Single keyboard handler for whichever gallery is fullscreen
+        document.addEventListener('keydown', function (e) {
+            if (!activeGallery) return;
+            if (e.key === 'ArrowRight') activeGallery.next();
+            if (e.key === 'ArrowLeft') activeGallery.prev();
+            if (e.key === 'Escape') activeGallery.close();
         });
 
-        // Fade-in effect for projects section
+        // Build the projects, wire up galleries, and enable the fade-in
         document.addEventListener('DOMContentLoaded', function () {
+            renderProjects();
+
+            document.querySelectorAll('#projects .project').forEach((projectEl) => {
+                initGallery(projectEl, projects[Number(projectEl.dataset.index)].images);
+            });
+
+            // Fade-in effect for projects section
             const fadeEls = document.querySelectorAll('#projects .fade-in-up');
             if ('IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries, obs) => {
