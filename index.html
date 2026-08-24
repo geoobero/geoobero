@@ -594,7 +594,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gallery-overlay fixed inset-0 bg-black z-50 items-center justify-center">
+                        <div class="gallery-overlay fixed inset-0 bg-black z-50 items-center justify-center" style="display:none;">
                             <div class="relative w-full h-full flex items-center justify-center">
                                 <img class="gallery-fullscreen max-w-full max-h-full object-contain cursor-zoom-out" src="" alt="">
                                 <button class="gallery-fs-prev absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition">${chevronLeft(8)}</button>
@@ -639,12 +639,14 @@
             function open() {
                 show(index);
                 overlay.classList.add('open');
+                overlay.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
                 activeGallery = { next: () => show(index + 1), prev: () => show(index - 1), close };
             }
 
             function close() {
                 overlay.classList.remove('open');
+                overlay.style.display = 'none';
                 document.body.style.overflow = '';
                 activeGallery = null;
             }
